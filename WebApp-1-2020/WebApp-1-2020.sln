@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp-1-2020", "WebApp-1-2020\WebApp-1-2020.csproj", "{683D4D64-A9E0-43DB-A6E7-D9A2C315C87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem", "ChinookSystem\ChinookSystem.csproj", "{3923CF7E-36FE-48BC-BD55-044DF990DAE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683D4D64-A9E0-43DB-A6E7-D9A2C315C87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683D4D64-A9E0-43DB-A6E7-D9A2C315C87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683D4D64-A9E0-43DB-A6E7-D9A2C315C87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683D4D64-A9E0-43DB-A6E7-D9A2C315C87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3923CF7E-36FE-48BC-BD55-044DF990DAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3923CF7E-36FE-48BC-BD55-044DF990DAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3923CF7E-36FE-48BC-BD55-044DF990DAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3923CF7E-36FE-48BC-BD55-044DF990DAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DA8E94D-374E-47BB-B03A-4A995DBA2B8C}
+	EndGlobalSection
+EndGlobal
