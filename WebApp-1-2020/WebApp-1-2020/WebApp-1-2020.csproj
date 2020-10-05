@@ -189,6 +189,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Account\Web.config" />
+    <Content Include="SamplePages\SearchByDDL.aspx" />
     <Content Include="SamplePages\TestPage.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -316,7 +317,7 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
-    <Content Include="WebConnnectionStrings.config" />
+    <Content Include="WebConnectionStrings.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
@@ -454,6 +455,13 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamplePages\SearchByDDL.aspx.cs">
+      <DependentUpon>SearchByDDL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplePages\SearchByDDL.aspx.designer.cs">
+      <DependentUpon>SearchByDDL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SamplePages\TestPage.aspx.cs">
       <DependentUpon>TestPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
