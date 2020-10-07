@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 #region Affitional Namespaces
 using ChinookSystem.BLL;
 using ChinookSystem.ViewModels;
+
 #endregion
 namespace WebApp_1_2020.SamplePages
 {
@@ -42,6 +43,33 @@ namespace WebApp_1_2020.SamplePages
             // prompt.Value = "0";
             // ArtistList.Items.Insert(0, prompt);
             ArtistList.Items.Insert(0, new ListItem("select an artist", "0"));
+
+
+        }
+
+        protected void SearchAlbums_Click(object sender, EventArgs e)
+        {
+            if (ArtistList.SelectedIndex==0)
+                {
+                MessageLabel.Text = "Select an artist for the search";
+                }
+            else 
+            {
+                AlbumController sysmgr = new AlbumController();
+                List<AlbumArtist> info = sysmgr.Album_FindByArtist(int.Parse(ArtistList.SelectedValue));
+                AlbumArtistList.DataSource = info;
+                AlbumArtistList.DataBind();
+
+           
+            }
+        }
+
+        protected void AlbumArtistList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //access the value from a grid view row
+            // create an alias thru the gridview row 
+            GridViewRow agvrow = AlbumArtistList.Rows[AlbumArtistList.SelectedIndex];
+            MessageLabel.Text = (agvrow.FindControl("AlbumId") as Label).Text;
 
 
         }
