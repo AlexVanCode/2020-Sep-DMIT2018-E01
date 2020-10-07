@@ -67,10 +67,9 @@ namespace ChinookSystem.BLL
         }
         #endregion
         #region CRUD: add, Update, and Delete
-
-
-
         // this is an add method - use insert 
+
+
         [DataObjectMethod(DataObjectMethodType.Insert,false)]
         public void Album_Add(AlbumItem item)
         {

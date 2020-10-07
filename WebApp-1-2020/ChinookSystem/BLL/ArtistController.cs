@@ -16,8 +16,8 @@ using System.ComponentModel;
 namespace ChinookSystem.BLL
 {
     //expose the library class for configuration of ODS
-    
-   public class ArtistController
+    [DataObject]
+    public class ArtistController
     {
         [DataObjectMethod(DataObjectMethodType.Select,false)] 
         public List<SelectionList> Artists_List() 
